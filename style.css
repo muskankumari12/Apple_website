@@ -9,7 +9,7 @@
   /* box-sizing: border-box; */
   font-family: Font_Regular;
 }
-z body,
+body,
 html {
   height: 100%;
   width: 100%;
@@ -48,18 +48,29 @@ html {
 .para p {
   color: #f2f2f2;
 }
+.para a {
+  color: blue;
+}
 /* slide one */
 
 .container {
   /* background: url(Assets/iphone15pro.jpg); */
-  background: black;
+  /* background: olive; */
   position: relative;
-  /* height: 500px;
-  width: 500px; */
+  height: 70%;
+  width: 100%;
   box-sizing: border-box;
+  /* object-fit: cover; */
+}
+.slide_1 .img {
+  position: absolute;
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
 }
 .slide_1 h1 {
   position: absolute;
+  top: 40%;
   left: 40%;
   color: white;
 }
@@ -72,8 +83,16 @@ html {
 }
 .slide_1 a {
   position: absolute;
-  left: 44%;
+  font-size: 20px;
+  left: 40%;
   top: 8%;
-  color: blue;
+  color: rgb(47, 47, 228);
+  align-items: center;
+}
+.slide_1 .buy {
+  position: absolute;
+  left: 50%;
+  top: 8%;
+  color: rgb(47, 47, 228);
   align-items: center;
 }
