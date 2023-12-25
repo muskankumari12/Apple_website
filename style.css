@@ -24,6 +24,8 @@ a {
   font-size: 12px;
   font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
     sans-serif;
+  /* color: var(--r-globalnav-color); */
+  background-color: transparent;
 }
 .para {
   height: 73px;
@@ -31,4 +33,18 @@ a {
   text-align: center;
   align-items: center;
   padding-top: 16px;
+}
+/* slide one */
+
+.slide_1 {
+  background: url(Assets/iphone15pro.jpg);
+  height: 100%;
+}
+.slide_1 h1 {
+  color: white;
+  text-align: center;
+}
+.slide_1 h2 {
+  color: white;
+  text-align: center;
 }
