@@ -54,35 +54,42 @@ html {
 /* slide one */
 
 .container {
-  /* background: url(Assets/iphone15pro.jpg); */
+  /* background-image: url("Assets/iphone15pro.jpg"); */
   /* background: olive; */
+  /* position: relative; */
+  height: 100%;
+  width: 100%;
+  background-color: aqua;
+
+  /* box-sizing: border-box; */
+  /* object-fit: cover; */
+}
+
+/* .slide_1 { */
+/* background-image: url("Assets/iphone15pro.jpg"); */
+/* background-size: contain; */
+/* height: 70%;
+  width: 100%; */
+/* background-color: aquamarine; */
+/* } */
+/* .slide_1 .img {
   position: relative;
   height: 70%;
   width: 100%;
-  box-sizing: border-box;
-  /* object-fit: cover; */
-}
-.slide_1 .img {
-  position: absolute;
-  height: 70%;
-  width: 100%;
   object-fit: cover;
-}
-.slide_1 h1 {
-  position: absolute;
-  top: 40%;
+} */
+/* .slide_1 h1 {
+  top: 20%;
   left: 40%;
   color: white;
 }
 .slide_1 h2 {
-  position: absolute;
-  left: 37%;
+  left: 50%;
   top: 4%;
   color: white;
   text-align: center;
 }
 .slide_1 a {
-  position: absolute;
   font-size: 20px;
   left: 40%;
   top: 8%;
@@ -90,9 +97,65 @@ html {
   align-items: center;
 }
 .slide_1 .buy {
-  position: absolute;
   left: 50%;
   top: 8%;
   color: rgb(47, 47, 228);
   align-items: center;
+} */
+
+.slide_1 {
+  position: relative;
+}
+.child-image {
+  /* position: absolute; */
+  height: 90%;
+  width: 100%;
+  /* position: relative; */
+}
+.heading_tags {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: 1px solid black;
+  width: fit-content;
+  top: 6%;
+  left: 40%;
+  position: absolute;
+  color: white;
+}
+.link_tags {
+  display: inline-flex;
+  gap: 20px;
+}
+a {
+  text-decoration: none;
+}
+
+/* slide two */
+.slide_2 {
+  position: relative;
+}
+.child-image {
+  /* position: absolute; */
+  height: 90%;
+  width: 100%;
+  /* position: relative; */
+}
+.heading_tags_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* outline: 1px solid black; */
+  width: fit-content;
+  top: 6%;
+  left: 40%;
+  position: absolute;
+  color: black;
+}
+.link_tags_2 {
+  display: inline-flex;
+  gap: 20px;
+}
+.slide_2 a {
+  text-decoration: none;
 }
