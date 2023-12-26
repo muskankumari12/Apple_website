@@ -59,7 +59,7 @@ html {
   /* position: relative; */
   height: 100%;
   width: 100%;
-  background-color: aqua;
+  background-color: white;
 
   /* box-sizing: border-box; */
   /* object-fit: cover; */
@@ -102,7 +102,7 @@ html {
   color: rgb(47, 47, 228);
   align-items: center;
 } */
-
+/* Slide one--------------------------------------------------- */
 .slide_1 {
   position: relative;
 }
@@ -125,17 +125,18 @@ html {
 }
 .link_tags {
   display: inline-flex;
-  gap: 20px;
+  gap: 70px;
 }
 a {
   text-decoration: none;
 }
 
-/* slide two */
+/* slide two --------------------------------------------------*/
 .slide_2 {
   position: relative;
+  margin-top: 10px;
 }
-.child-image {
+.child-image_2 {
   /* position: absolute; */
   height: 90%;
   width: 100%;
@@ -154,7 +155,7 @@ a {
 }
 .link_tags_2 {
   display: inline-flex;
-  gap: 20px;
+  gap: 70px;
 }
 .slide_2 a {
   text-decoration: none;
