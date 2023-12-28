@@ -56,30 +56,31 @@ i {
 }
 /* slide one */
 
-.container {
+/* .container {
   position: relative;
   height: 100%;
   width: 100%;
   background-color: white;
-}
+} */
 
 /* Slide one--------------------------------------------------- */
 .slide_1 {
+  position: absolute;
   display: flex;
-  align-items: center;
   justify-content: center;
-  /* background: url("Assets/iphone15pro.jpg"); */
-  background-repeat: no-repeats;
+  align-items: center;
   height: 70vh;
   width: 100%;
-  overflow: hidden;
+}
+.slide_1 img {
+  position: absolute;
+  object-fit: cover;
 }
 
 .heading_tags {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   width: fit-content;
   top: 6%;
   left: 40%;
@@ -99,26 +100,34 @@ i {
 }
 
 /* slide two --------------------------------------------------*/
+
 .slide_2 {
-  position: absolute;
-  margin-top: 10px;
-  background-image: url("Assets/sky.jpg");
-  background-size: contain;
-  height: 70%;
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  overflow: hidden;
+  height: 70vh;
   width: 100%;
+  object-fit: cover;
+}
+.slide_2 img {
+  object-fit: cover;
 }
 
 .heading_tags_2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  width: fit-content;
   top: 6%;
   left: 40%;
   position: absolute;
   color: black;
 }
-.link_tags_2 {
+.link_tags {
   display: inline-flex;
   gap: 70px;
   margin-top: 20px;
@@ -128,46 +137,48 @@ i {
 .slide_2 a {
   text-decoration: none;
 }
-/* slide three------------------------------- */
 
+/* slide three------------------------------- */
 .slide_3 {
-  position: absolute;
   margin-top: 10px;
-  background: url("Assets/small_2x.mp4");
-  background-size: contain;
-  height: 70%;
-  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-size: contain; */
+  overflow: hidden;
+  /* height: 70vh;
+  width: 100%; */
+  background-color: aqua;
 }
-.child-video {
-  /* position: absolute; */
-  height: 90%;
+video {
+  height: 70vh;
   width: 100%;
-  /* position: relative; */
+  overflow: hidden;
+  object-fit: cover;
 }
+
 .heading_tags_3 {
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* outline: 1px solid black; */
-  width: fit-content;
+  font-size: 6px;
   top: 70%;
   left: 40%;
-  position: absolute;
+
   color: white;
-  /* margin-top: 30px; */
 }
 .heading_tags_3 img {
-  height: 80%;
-  width: 60%;
   margin-bottom: 30px;
 }
-.btn_tags {
-  margin-top: 30px;
-  font-size: 80px;
+.link_tags {
   display: inline-flex;
   gap: 70px;
-  height: 40px;
-  width: 70px;
-  background-color: #ff5c5c;
-  border-radius: 20%;
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.slide_3 a {
+  text-decoration: none;
 }
