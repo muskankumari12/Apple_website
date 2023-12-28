@@ -165,31 +165,47 @@ i {
   margin-top: 1%;
   height: 70vh;
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
   object-fit: cover;
 }
 
 .heading_tags_3 {
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 6px;
-  top: 70%;
+  width: fit-content;
+  top: 60%;
   left: 40%;
-
+  position: absolute;
   color: white;
 }
-.heading_tags_3 img {
-  margin-bottom: 30px;
+.heading_tags_3 p {
+  font-size: 28px;
 }
-.link_tags {
+.heading_tags_3 img {
+  position: absolute;
+  bottom: 90px;
+}
+.btn_tags {
   display: inline-flex;
   gap: 70px;
   margin-top: 20px;
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 20px;
 }
+.slide_3 button {
+  border-radius: 40px;
+  border-style: none;
+  font-size: large;
+}
+.slide_3 .btn_1 {
+  height: 40px;
+  width: 150px;
+}
+.slide_3 .btn_2 {
+  height: 40px;
+  width: 90px;
+}
+
 .slide_3 a {
   text-decoration: none;
 }
