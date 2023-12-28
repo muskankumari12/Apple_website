@@ -16,16 +16,14 @@ html {
   /* position: relative; */
 }
 .navbar {
-  /* position: fixed; */
+  position: fixed;
   display: flex;
   width: 100%;
   height: 44px;
   justify-content: center;
   gap: 2vw;
   align-items: center;
-  /* background-color: black; */
   background-color: black;
-  /* text-decoration: none;   */
 }
 i {
   color: rgb(202, 199, 199);
@@ -37,15 +35,14 @@ i {
   font-size: 12px;
   font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
     sans-serif;
-  /* color: var(--r-globalnav-color); */
-  /* background-color: transparent; */
 }
 .para {
-  height: 40px;
-  background: rgb(29, 27, 27);
+  position: static;
+  height: 10%;
+  background: rgb(168, 40, 40);
   text-align: center;
   align-items: center;
-  padding-top: 16px;
+  /* padding-top: 16px; */
 }
 
 .para p {
@@ -54,66 +51,69 @@ i {
 .para a {
   color: blue;
 }
-/* slide one */
-
-/* .container {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  background-color: white;
-} */
 
 /* Slide one--------------------------------------------------- */
 .slide_1 {
-  position: absolute;
+  /* position: relative; */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 70vh;
   width: 100%;
+  background-color: black;
 }
 .slide_1 img {
-  position: absolute;
   object-fit: cover;
+  margin-top: 8%;
 }
 
-.heading_tags {
+.heading_tags_1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: fit-content;
-  top: 6%;
+  top: 15%;
   left: 40%;
   position: absolute;
   color: white;
 }
-.link_tags {
+
+.heading_tags_1 h1 {
+  font-size: 60px;
+}
+.heading_tags_1 p {
+  font-size: 28px;
+}
+
+.link_tags_1 {
   display: inline-flex;
   gap: 70px;
   margin-top: 20px;
-  font-size: larger;
-  font-weight: bold;
+  font-size: 20px;
 }
 
 .slide_1 a {
   text-decoration: none;
+  color: rgb(26, 141, 242);
+}
+.link_tags_1 a:hover {
+  border-bottom: 2px solid rgb(26, 141, 242);
 }
 
 /* slide two --------------------------------------------------*/
 
 .slide_2 {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-size: cover;
-  overflow: hidden;
   height: 70vh;
   width: 100%;
-  object-fit: cover;
+  background-color: white;
 }
 .slide_2 img {
+  margin-top: 5%;
   object-fit: cover;
 }
 
@@ -122,20 +122,30 @@ i {
   flex-direction: column;
   align-items: center;
   width: fit-content;
-  top: 6%;
+  top: 15%;
   left: 40%;
   position: absolute;
   color: black;
 }
-.link_tags {
+.heading_tags_2 h1 {
+  font-size: 60px;
+}
+.heading_tags_2 p {
+  font-size: 28px;
+}
+
+.link_tags_2 {
   display: inline-flex;
   gap: 70px;
   margin-top: 20px;
-  font-size: larger;
-  font-weight: bold;
+  font-size: 20px;
 }
 .slide_2 a {
   text-decoration: none;
+  color: rgb(26, 141, 242);
+}
+.link_tags_2 a:hover {
+  border-bottom: 2px solid rgb(26, 141, 242);
 }
 
 /* slide three------------------------------- */
@@ -145,13 +155,14 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-size: contain; */
+
   overflow: hidden;
-  /* height: 70vh;
-  width: 100%; */
-  background-color: aqua;
+  height: 70vh;
+  width: 100%;
+  background-color: white;
 }
-video {
+.slide_3 video {
+  margin-top: 1%;
   height: 70vh;
   width: 100%;
   overflow: hidden;
